@@ -1,20 +1,23 @@
-<h1>List of robs</h1>
+<h1>List of Duffs</h1>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Contents</th></th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Content</th>
+    
   </tr>
 
 <% @robs.each do |rob| %>
   <tr>
-    <td><%= rob.title %></td>
-    <td><%= rob.content %></td>
+    <td><%= rob.name %></td>
+    <td><%= rob.email %></td>
+     <td><%= rob.content %></td>
    <td><%= link_to 'Check the details', rob_path(rob.id) %></td>
-    <td><%= link_to "Edit this rob", edit_rob_path(rob.id) %></td>
-    <td><%= link_to link_to 'Check the details', rob_path(rob.id) %></td>
-    <td><%= link_to link_to "Edit this rob", edit_rob_path(rob.id) %></td>
-    <td><%= link_to link_to 'Delete this rob', rob_path(rob.id), method: :delete ,data: { confirm: 'Are you sure?' } %>%></td>
+   
+  
+    <td><%= link_to link_to "Edit this duff", edit_rob_path(rob.id) %></td>
+    <td><%= link_to link_to 'Delete this duff', rob_path(rob.id), method: :delete ,data: { confirm: 'Are you sure?' } %></td>
     
   </tr>
 <% end %>
@@ -22,4 +25,4 @@
 </table>
 
 <br>
-<%= link_to 'Post a new rob', new_rob_path %>
+<%= link_to 'Post a new duff', new_rob_path %>

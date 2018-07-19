@@ -32,7 +32,7 @@ class RobsController < ApplicationController
    def update
     @robs = Rob.find(params[:id])
     if @robs.update(rob_params)
-      redirect_to robs_path, Notice: "You have edited this rob！"
+      redirect_to robs_path, Notice: "You have edited this duff！"
     else
       render 'edit'
     end
@@ -40,7 +40,7 @@ class RobsController < ApplicationController
   
   def destroy
     @robs.destroy
-    redirect_to robs_path, Notice: "You have deleted the rob!"
+    redirect_to robs_path, Notice: "You have deleted the duff!"
   end
   
   
@@ -49,7 +49,7 @@ class RobsController < ApplicationController
   private
   #Before_action : Set_rob, only: [:show, :edit, :update, :destroy] 
    def rob_params
-    params.require(:rob).permit(:title, :content)
+    params.require(:rob).permit(:name, :email, :content)
    end
   
   def set_rob

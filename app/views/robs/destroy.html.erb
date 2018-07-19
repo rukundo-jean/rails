@@ -1,14 +1,19 @@
 <%= form_with(model: @robs, local: true) do |form| %>
 <div class="blog_title">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
   </div>
   <div class="blog_title">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+   <div class="blog_title">
     <%= form.label :content %>
     <%= form.text_field :content %>
+  <%= form.submit %>
   </div>
   <h2>Create a new rob</h2>
 
-  <%= render 'form' %>
+ 
   <%= form.submit %>
 <% end %>

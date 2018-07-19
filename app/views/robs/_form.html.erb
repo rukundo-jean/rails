@@ -12,14 +12,17 @@
   <% end %>
 
   <div class="blog_title">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
   </div>
   <div class="blog_title">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+   <div class="blog_title">
     <%= form.label :content %>
     <%= form.text_field :content %>
-  </div>
   <%= form.submit %>
 <% end %>
 
-<%= link_to "Return to List of robs screen", robs_path %>
+<%= link_to "Return to List of duffs screen", robs_path %>
