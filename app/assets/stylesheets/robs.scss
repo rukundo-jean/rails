@@ -1,3 +1,71 @@
 // Place all the styles related to the robs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+li{
+    list-style:none;
+}
+ul{
+    padding:0;
+}
+h1{
+    color: #ffffff; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 30px; font-weight: 800; 
+    line-height: 36px; margin: 0 0 24px;
+    text-align: center;
+}
+
+table {  
+    color: #333; /* Lighten up font color */
+    font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+    width: 640px; 
+    border-collapse: 
+    collapse; border-spacing: 0; 
+}
+
+td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
+
+th {  
+    background: #F3F3F3; /* Light grey background */
+    font-weight: bold; /* Make sure they're bold */
+}
+
+td {  
+    background: #FAFAFA; /* Lighter grey background */
+    text-align: center; /* Center our text */
+}
+
+  
+.header{
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.menu{
+    background-color:#012F4B;
+    color:#fff;
+}
+.menu li {
+    padding:5% 10%;
+    text-align:center;
+}
+.contents li{
+    background-color:#3cb371;
+    text-decoration: underline ;
+     font-size: 20px;
+     line-height: 24px; 
+   font-family: 'Helvetica Neue', sans-serif;
+    color:#fff;
+    padding:10% 10%;
+    box-sizing: border-box;
+    border: solid 1px #fff;
+    margin: 0 0 24px; 
+   }
+.topic li{
+    margin:1%;
+    border-bottom: dotted 1px #333333;
+}
+.container{
+    margin-top:20px;
+}
