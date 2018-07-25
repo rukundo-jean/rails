@@ -1,44 +1,25 @@
 
+ <div class="container">
 
-<article>
-  
+  <div class="contents">
+            <ul class="row">
+               
 
 
-<h1>List of Duffs</h1>
- <div class="contents">
-        <ul>
- 
-            <li>
-              <div class="table-responsive"><table class="table">
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Content</th>
+
+<!--</div>    -->
+
+
     
-  </tr>
 
-<% @robs.each do |rob| %>
-  <tr>
-    <td><%= rob.name %></td>
-    <td><%= rob.email %></td>
-     <td><%= rob.content %></td>
-   <td><%= link_to 'Check the details', rob_path(rob.id) %></td>
-   
-  
-    <td><%= link_to link_to "Edit this duff", edit_rob_path(rob.id) %></td>
-    <td><%= link_to link_to 'Delete this duff', rob_path(rob.id), method: :delete ,data: { confirm: 'Are you sure?' } %></td>
+
+
+ <li class="col-sm-6 col-md-3">contents1</li>
+                <li class="col-sm-6 col-md-3">contents2</li>
+                <li class="col-sm-6 col-md-3">contents3</li>
+                <li class="col-sm-6 col-md-3">contents4</li>
+                </ul>
+        </div>
+      
     
-  </tr>
-<% end %>
- 
-</table>
-</li>
-     </table>
-</div>       <li>contents2</li>
-        </ul>
-    </div>
-<br>
-<%= link_to 'Post a new duff', new_rob_path %>
-
-</article>
+</div>
