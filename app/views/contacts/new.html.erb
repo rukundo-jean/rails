@@ -1,28 +1,27 @@
-
-<%= form_with(model: @contact, local: true) do |form| %>
- <% if @contact.errors.any? %>
+<%= form_with(model: @contacts, local: true) do |form| %>
+  <% if @contacts.errors.any? %>
     <div id="error_explanation">
-      <h2><%= @contact.errors.count %>errors occurred.</h2>
+      <h2><%= @contacts.errors.count %>errors occurred.</h2>
       <ul>
-        
-        <% @contact.errors.full_messages.each do |msg| %>
-        <li> <%= msg %></li>
+
+      <% @contacts.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
-  <div class="contact_name">
+
+  <div class="blog_name">
     <%= form.label :name %>
-    <%= form.text_field:name %>
+    <%= form.text_field :name %>
   </div>
-  <div class="contact_email">
+  <div class="blog_email">
     <%= form.label :email %>
-    <%= form.text_field:email %>
+    <%= form.text_field :email %>
   </div>
-  <div class="contact_content">
-    <%= form.label :content  %>
-    <%= form.text_field:content  %>
+   <div class="blog_content">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
   </div>
   <%= form.submit %>
 <% end %>
-
